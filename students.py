@@ -16,3 +16,4 @@ print(sam)
 
 
 
+# regular classes use __init__ and __str__
