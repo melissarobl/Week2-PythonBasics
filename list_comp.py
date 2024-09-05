@@ -48,7 +48,7 @@ non_zero = [n for n in listy if n != 0]
 print(non_zero)
 
 
-#Uppercase all food items, but on if it's pizza
+#Uppercase all food items, but only if it's pizza
 foods = ['cheese pizza', 'pepperoni pizza', 'ice cream', 'veggie pizza', 'tacos']
 pizzas = [food.upper() for food in foods if 'pizza' in food]
 print(pizzas)
