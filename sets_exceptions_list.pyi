@@ -1,5 +1,7 @@
 #sets - they are not ordered!
 
+from pkg_resources import non_empty_lines
+
 cats = set() #creates empty set
 cats.add('Lion')
 cats.add('Tiger')
@@ -11,7 +13,7 @@ print(cats)
 
 birds = {'owl', 'robin', 'swan'}
 print(birds)
-birds.add('robine')
+birds.add('robin')
 print(birds)
 birds.remove('owl')
 birds.add('cardinal')
@@ -42,6 +44,7 @@ cats.add('Puma') #{'Leopard', 'Puma', 'Tiger'} no duplicates
 #catching errors/exceptions:
 def get_random_cat_and_pattern():
     return 'tiger', 'stripes' #return a tuple
+
 # upack your tuple to conveniently get both values in a separate variable
 cat, pattern = get_random_cat_and_pattern() # cat = 'tiger', pattern = 'stripes'
 
